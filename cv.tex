@@ -1,0 +1,289 @@
+\documentclass{cv}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=false,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=blue,
+  pdfpagemode=FullScreen,
+}
+
+\newcommand\verticalPad{1.1cm}
+\newcommand\horizontalpad{1.3cm}
+\usepackage[left=\horizontalpad,top=\verticalPad,right=\horizontalpad,bottom=\verticalPad]{geometry}
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
+
+\name{Jonathan Neidel}
+\address{\href{https://jneidel.com}{https://jneidel.com} \\ \href{https://github.com/jneidel}{https://github.com/jneidel}}
+\address{Geboren: {\em7. Aug 1997} in Berlin}
+\address{cv@jneidel.com}
+
+\begin{document}
+
+\begin{rSection}{Bildung}
+
+{\bf HTW Berlin}, Berlin \hfill {\em 2019 - Heute}\\
+B.Sc in Angewandter Informatik
+
+\smallskip
+
+{\bf Emil Molt Akademie}, Berlin \hfill {\em 2016 - 2018}\\
+Fachabitur: Wirtschaft \hfill NC: 1,3
+% Einschließlich 6 Monaten Praktikum in einem Startup. NC: 1,3
+\end{rSection}
+
+\begin{rSection}{IT Skills}
+  \newcommand\skillWidth{0.48}
+  \begin{minipage}[t]{\skillWidth\linewidth}
+
+Bei der Entwicklung komplexer Lösungen setze ich auf Node.js als Mittel der
+Wahl. Ich bin vertraut damit mittels Express APIs und komplette Webapps
+umzusetzen, auch gestützt durch den gesamten JavaScript Werkzeugkasten (Webpack
+als mächtiges Build-tool, Jest als Test-runner und Eslint für automatisches
+Linting) sowie in Verbindung mit Frontend-Frameworks wie Vue.js oder dem
+klassenbasierten TypeScript. Dabei liegt mein Fokus auf dem Backend, wo ich Node
+auch außerhalb des Web-Kontextes schon zur Verwendung bringen konnte.
+
+    \medskip
+
+    \textbf{Sprachen:}
+    \begin{itemize}
+      \item JavaScript, TypeScript
+      \item HTML, CSS, SASS
+      \item Java
+    \end{itemize}
+
+    \textbf{Frameworks:}
+    \begin{itemize}
+      \item Node.js, Express
+      \item Vue.js
+    \end{itemize}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{\skillWidth\linewidth}
+
+Seit 2018 benutze ich Linux als mein primäres Betriebssystem, wobei ich
+alles - im Rahmen des möglichen - im Terminal mache. Dabei habe ich mir mein
+gesamtes System (und Tools wie: vim, tmux, etc.) auf meine Bedürfnisse zurecht
+geschnitten und dabei Erfahrung beim Schreiben von diversen Shell scripts zum
+Lösen mannigfaltiger Probleme gesammelt. Git wird dabei zum verwalten von allem
+genutzt und dessen Gebrauch ist mir schon ins Blut übergegangen.
+
+    \medskip
+
+    \textbf{Tools:}
+    \begin{itemize}
+      \item Linux, Shell/Bash, Vim
+      \item Git, Github
+      \item Webpack
+      \item Jest
+      \item Eslint
+    \end{itemize}
+
+    \textbf{Datenbanken:}
+    \begin{itemize}
+      \item MongoDB
+      \item PostgreSQL, MariaDB
+    \end{itemize}
+
+    % \textbf{Andere:}
+    % \begin{itemize}
+    %   \item LaTex
+    %   \item Web Scraping
+    % - Web Scraping
+    % - Web Audio API
+    % - Chrome Extension
+    % - UML
+    % \end{itemize}
+
+  \end{minipage}
+\end{rSection}
+
+\begin{rSection}{IT Projekte}
+  \textbf{\href{https://github.com/jneidel/what-to-do}{what-to-do}}
+  \hfill
+  {\em Nov 2020 - Apr 2021}
+
+  Node, Vue.js, Express, MariaDB, Jest, supertest
+
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+    \smallskip
+    \item Implementation der Todo App Funktionalität
+    \item Deployment und Integration
+  \end{list}
+
+  \textbf{\href{https://github.com/vyvytn/avt}{DJ Tool}}
+  \hfill
+  {\em Okt 2020 - Jan 2021}
+
+  JavaScript, Web Audio API, Node, Express
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item Implementierung der unterliegenden Audio-Logik des Tools
+    \item Schreiben der User Stories
+    \item Bereitstellung eines Hilfsservers als Schnittstelle zu externen APIs
+  \end{list}
+
+  \textbf{\href{https://github.com/jneidel/htw-prog3}{Programmierung 3 Beleg}}
+  \hfill
+  {\em Okt 2020 - Apr 2021}
+
+  Java, CLI, TCP, UDP, JavaFX
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item CLI und GUI Interfaces
+    \item Kommunikation über TCP/UDP
+  \end{list}
+
+  % \textbf{\href{https://github.com/jneidel/yoga-vidya-thunderbird2csv-add-on}{yoga-vidya-thunderbird2csv-add-on}}
+  % \hfill
+  % {\em Feb 2020}
+
+  % Node, Thunderbird
+  % \begin{list}{$\cdot$}{}
+  %   \itemsep -0.5em \vspace{-0.5em}
+  %   \smallskip
+  %   \item Schnittstelle zum Übertragen von Daten aus Emails ins Adressverwaltungsprogramm
+  %   \item Dokumentation und Integration im Betrieb
+  % \end{list}
+
+  % \textbf{\href{https://github.com/Abrax20/slash-dsgvo}{DSGVO Sync}}
+  % \hfill
+  % {\em Apr 2019}
+
+  % Node, Express, Microservices, PDF
+  % \begin{list}{$\cdot$}{}
+  %   \itemsep -0.5em \vspace{-0.5em}
+  %   \smallskip
+  %   \item Hackathon Contribution
+  %   \item API zum generieren einer PDF der Einverständiserklärung
+  % \end{list}
+
+  \textbf{\href{https://github.com/jneidel/lock-me-out}{lock-me-out}}
+  \hfill
+  {\em Jan 2019 - Mär 2019}
+
+  TypeScript, Node, Express, GPG, Webpack, MongoDB, CLI, Eslint
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item Webapp mit Serverside-rendering
+    \item GPG Wrapper zum verschlüsseln und generieren von Keys
+    \item Zugehörige CLI, als alternatives Interface
+  \end{list}
+
+  \textbf{\href{https://github.com/jneidel/mangareader-dl}{mangareader-dl}}
+  \hfill
+  {\em Jan 2018 - Heute}
+
+  Node, CLI, Web Scraping, TDD, Jest, TypeScript
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item Konfigurierbares Command Line Interface
+    \item Scraper zum dynamischen Herunterladen von Bilderreihen
+    \item Neubau mit klarer OO-Struktur in TypeScript
+    \item Test Driven Development für sicheres Refactoring und zum Überprüfen der
+  Funktionalität (bei Server-side Änderungen)
+  \end{list}
+
+  \textbf{\href{https://github.com/jneidel/dotfiles}{dotfiles}}
+  \hfill
+  {\em 2018 - Heute}
+
+  Shell scripting, Linux, Shell, vim, tmux
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item \textgreater200 Shell Scripts für diverse Anwendungsbereiche
+  \end{list}
+
+  \textbf{\href{https://github.com/jneidel/setup-webpack}{setup-webpack}}
+  \hfill
+  {\em 2018 - Heute}
+
+  Webpack, JavaScript, npm package
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item Abstraktion von Webpack für bestimmte Anwendungsfälle
+    \item Ausführliche Dokumentation
+  \end{list}
+
+  \textbf{\href{https://github.com/jneidel/projects-overview}{projects-overview}}
+  \hfill
+  {\em Aug 2017 - Mai 2018}
+
+  Node, Express, MongoDB, Webpack, Mocha
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item Webapp mit REST API und vollständiger Nutzerverwaltung
+  \end{list}
+
+  % \textbf{\href{}{}}
+  % \hfill
+
+  % \begin{list}{$\cdot$}{}
+  %   \itemsep -0.5em \vspace{-0.5em}
+  %   \smallskip
+  %   \item
+  % \end{list}
+
+\end{rSection}
+
+\begin{rSection}{Ehrenamtliches Engagement}
+  {\bf Organisator des Berliner FreeCodeCamp Meetups}
+  \hfill
+  {\em 2018 - 2019}
+
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item Offenes Meetup für Programmieranfänger im Rahmen des FreeCodeCamp Curriculum
+    \item Fachlicher und genereller Ansprechpartner für die Teilnehmer
+  \end{list}
+
+  {\bf Maintainer der \href{https://github.com/agarrharr/awesome-cli-apps}{awesome-cli-apps} Github Repo}
+  \hfill
+  {\em 2019 - Heute}
+
+  \begin{list}{$\cdot$}{}
+    \itemsep -0.5em \vspace{-0.5em}
+    \smallskip
+    \item Beliebteste Liste von CLIs auf Github, mit 7,6k Stars
+    \item Prüfen von Anträgen zum Hinzufügen zur Liste
+  \end{list}
+\end{rSection}
+
+\begin{rSection}{Sprachen}
+  \begin{minipage}[l]{0.48\linewidth}
+  {\bf Deutsch:} Muttersprachler
+  \end{minipage}
+  \begin{minipage}[l]{0.48\linewidth}
+  {\bf Englisch:} Flüssig \hfill
+  \end{minipage}
+\end{rSection}
+
+\begin{rSection}{Interessen}
+  {\bf Programmieren:} Auch außerhalb des professionellen Kontexts nutze ich meine
+Fähigkeiten täglich um alle möglichen Probleme um mich herum zu lösen und mir
+das Leben zu erleichtern.
+
+  {\bf Kochen:} Ich esse gerne und genieße es deshalb auch mir etwas schönes
+zuzubereiten. Außerdem erlaubt es mir mich beim Improvisieren von Gerichten
+auszuleben und bietet einen angenehmen Kontrast zum ``vor dem Bildschirm sitzen''.
+
+  {\bf Sport:} Dieser Kontrast bietet sich auch indem ich mich sportlich auf dem
+Fahrrad, der Yogamatte oder im Fitnessstudio auslebe.
+
+  {\bf Lesen:} Neben Informatisch-technischen Werken lese ich primär englische
+Non-Fiction Bücher aber auch den ein oder anderen Roman.
+\end{rSection}
+
+\end{document}
