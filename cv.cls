@@ -11,6 +11,18 @@
 
 \pagestyle{empty} % Suppress page numbers
 
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=false,
+  linkcolor=blue,
+  filecolor=magenta,
+  urlcolor=blue,
+  pdfpagemode=FullScreen,
+}
+
+% use fontawesome
+\RequirePackage{packages/fontawesome}
+
 %	HEADINGS COMMANDS
 
 \def \name#1{\def\@name{#1}}
@@ -90,3 +102,20 @@
 \def\sectionlineskip{\medskip} % The space above the horizontal line for each section
 \def\nameskip{\bigskip} % The space after your name at the top
 \def\sectionskip{\medskip} % The space after the heading section
+
+% src: https://github.com/ice1000/resume/blob/master/latex/resume.cls
+% defines one's email
+% usage: \email{<email>}
+\newcommand{\email}[1]{\faEnvelope\ \href{mailto:#1}{#1}}
+% defines one's GitHub
+% usage: \github{<github>}
+\newcommand{\github}[1][]{\faGithub\
+  % \ifthenelse{\@ifundefined{#1}}%
+  %   {\href{#2}{#2}}
+    {\href{https://github.com/#1}{#1}}}
+% defines one's homepage
+% usage: \homepage{<homepage>}
+\newcommand{\homepage}[2][]{\faLink\
+  % \ifthenelse{\@ifundefined{#1}}%
+  %   {\href{#2}{#2}}
+    {\href{#2}{#1}}}
