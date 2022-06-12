@@ -110,12 +110,10 @@
 % defines one's GitHub
 % usage: \github{<github>}
 \newcommand{\github}[1][]{\faGithub\
-  % \ifthenelse{\@ifundefined{#1}}%
-  %   {\href{#2}{#2}}
-    {\href{https://github.com/#1}{#1}}}
+  {\href{https://github.com/#1}{#1}}}
 % defines one's homepage
 % usage: \homepage{<homepage>}
 \newcommand{\homepage}[2][]{\faLink\
-  % \ifthenelse{\@ifundefined{#1}}%
-  %   {\href{#2}{#2}}
-    {\href{#2}{#1}}}
+  {\href{#2}{#1}}}
+\newcommand{\linkedin}[1][]{\faLinkedin\
+  {\href{https://www.linkedin.com/in/#1}{#1}}}
