@@ -1,7 +1,16 @@
-all: build
+all: de en
 
-build: cv.pdf
-	xelatex cv.tex
+de: cv.de.tex
+	xelatex cv.de.tex
 
-watch: cv.pdf
-	ls cv.tex cv.cls | entr -cr make
+en: cv.en.tex
+	xelatex cv.en.tex
+
+de_watch: cv.cls cv.de.tex
+	ls cv.de.tex cv.cls | entr -cr make
+
+en_watch: cv.cls cv.en.tex
+	ls cv.en.tex cv.cls | entr -cr make
+
+watch: cv.cls cv.de.tex cv.en.tex
+	ls cv.de.tex cv.en.tex cv.cls | entr -cr make
