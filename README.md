@@ -16,18 +16,25 @@ make de
 make en
 ```
 
-**To build continuously:**
+**To rebuild on change:**
 
 ```sh
 make watch
 
 # on their own
-make de_watch
-make en_watch
+make watch_en
+make watch_de
+```
+
+**To rerender on change:**
+
+```sh
+make render_en
+make render_de
 ```
 
 ## Dependencies
 
 ```sh
-yay -S texlive-core
+yay -S texlive-full
 ```
