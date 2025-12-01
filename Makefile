@@ -2,11 +2,17 @@ all: de en
 
 de: cv.de.tex
 	xelatex cv.de.tex
+ev.de.pdf: cv.de.tex
+	xelatex cv.de.tex
+
 en: cv.en.tex
+	xelatex cv.en.tex
+cv.en.pdf: cv.en.tex
 	xelatex cv.en.tex
 
 upload: cv.de.pdf cv.en.pdf
-	sscp cv.de.pdf cv.en.pdf u:~/html/
+	sscp cv.de.pdf u:~/html/jneidel.de/about/cv/cv.pdf
+	sscp cv.en.pdf u:~/html/jneidel.com/about/cv/cv.pdf
 
 watch_de: cv.cls cv.de.tex
 	ls cv.de.tex cv.cls | entr -cr make
