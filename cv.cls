@@ -11,6 +11,8 @@
 
 \pagestyle{empty} % Suppress page numbers
 
+\usepackage{graphicx}
+
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=false,
@@ -19,6 +21,12 @@
   urlcolor=blue,
   pdfpagemode=FullScreen,
 }
+
+\newcommand\verticalPad{1.1cm}
+\newcommand\horizontalpad{1.3cm}
+\usepackage[left=\horizontalpad,top=\verticalPad,right=\horizontalpad,bottom=\verticalPad]{geometry}
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
 
 % use fontawesome
 \RequirePackage{packages/fontawesome}
