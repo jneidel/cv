@@ -1,8 +1,18 @@
 # cv
 
-> Source for my CV
+> My multi-language latex CV
 
-My personal cv built with LaTex. [See the result](https://jneidel.com/cv.en).
+A good-looking multi-language CV built in LaTeX.
+You can see the results here:
+- [en](https://jneidel.com/about/cv/cv.pdf)
+- [de](https://jneidel.de/about/cv/cv.pdf)
+
+## Structure
+
+- [`cv.cls`](cv.cls): shared configuration, reusable components
+- [`cv.en.tex`](cv.en.tex): english contents
+- [`cv.de.tex`](cv.de.tex): german contents
+- [`packages`](packages): local latex packages
 
 ## Build
 
@@ -11,17 +21,17 @@ My personal cv built with LaTex. [See the result](https://jneidel.com/cv.en).
 ```sh
 make all
 
-# on their own
+# or build an individual version on it's own
 make de
 make en
 ```
 
-**To rebuild on change:**
+**To rebuild while watching for changes:**
 
 ```sh
 make watch
 
-# on their own
+# or on their own
 make watch_en
 make watch_de
 ```
