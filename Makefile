@@ -25,3 +25,7 @@ render_de: cv.de.pdf
 	ls cv.de.pdf | entr -r mupdf cv.de.pdf
 render_en: cv.en.pdf
 	ls cv.en.pdf | entr -r mupdf cv.en.pdf
+
+publish:
+	git push origin master
+	$(MAKE) upload
