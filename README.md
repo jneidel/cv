@@ -48,3 +48,17 @@ make render_de
 ```sh
 yay -S texlive-full
 ```
+
+## Git hooks
+
+`pre-commit`
+```sh
+#!/bin/sh
+
+# set "Updated" to current month
+sed -i -E "s/\{\\\\em [A-Za-z]{3} [0-9]{4}\}/\{\\\\em $(date +'%b %Y')\}/g" cv.*.tex
+
+if ! git diff --quiet -- cv.*.tex; then
+  exit 1
+fi
+```
