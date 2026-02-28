@@ -2,7 +2,7 @@ all: de en
 
 de: cv.de.tex
 	xelatex cv.de.tex
-ev.de.pdf: cv.de.tex
+cv.de.pdf: cv.de.tex
 	xelatex cv.de.tex
 
 en: cv.en.tex
