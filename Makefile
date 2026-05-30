@@ -1,14 +1,14 @@
 all: de en
 
 de: cv.de.tex
-	xelatex cv.de.tex
+	xelatex "\def\gitRevId{$(shell git rev-parse --short HEAD)}\input{cv.de.tex}"
 cv.de.pdf: cv.de.tex
-	xelatex cv.de.tex
+	xelatex "\def\gitRevId{$(shell git rev-parse --short HEAD)}\input{cv.de.tex}"
 
 en: cv.en.tex
-	xelatex cv.en.tex
+	xelatex "\def\gitRevId{$(shell git rev-parse --short HEAD)}\input{cv.en.tex}"
 cv.en.pdf: cv.en.tex
-	xelatex cv.en.tex
+	xelatex "\def\gitRevId{$(shell git rev-parse --short HEAD)}\input{cv.en.tex}"
 
 upload: cv.de.pdf cv.en.pdf
 	sscp cv.de.pdf u:~/html/jneidel.de/about/cv/cv.pdf
