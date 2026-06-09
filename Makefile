@@ -27,5 +27,5 @@ render_en: cv.en.pdf
 	ls cv.en.pdf | entr -r mupdf cv.en.pdf
 
 publish:
-	git push origin master
+	git push --force-with-lease origin master
 	$(MAKE) upload
