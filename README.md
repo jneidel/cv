@@ -56,7 +56,8 @@ yay -S texlive-full
 #!/bin/sh
 
 # set "Updated" to current month
-sed -i -E "s/\{\\\\em [A-Za-z]{3} [0-9]{4}\}/\{\\\\em $(date +'%b %Y')\}/g" cv.*.tex
+sed -i -E "s/\{\\\\em [A-Za-z]{3} [0-9]{4}\}/\{\\\\em $(date +'%b %Y')\}/g" cv.en.tex
+sed -i -E "s/\{\\\\em [A-Za-z]{3} [0-9]{4}\}/\{\\\\em $(date +'%b %Y' | sed 's|May|Mai|; s|Dec|Dez|; s|Mar|Mär|; s|Oct|Okt|')\}/g" cv.de.tex
 
 if ! git diff --quiet -- cv.*.tex; then
   exit 1
